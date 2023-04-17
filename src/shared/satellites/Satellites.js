@@ -1,11 +1,11 @@
 import React, {Fragment} from "react"
 
-const Title = (props) => {
+const Satellites = (props) => {
     return(
         <Fragment>
-            <p className="title">{props.name}</p>
+            <li> {props.name}</li>
         </Fragment>
     )
 }
 
-export default Title
+export default Satellites
