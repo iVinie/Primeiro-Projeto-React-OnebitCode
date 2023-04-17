@@ -4,7 +4,7 @@ Olá, meu nome é Vinicius Oliveira e estou desenvolvendo um sistema em **React*
 
 ## Objetivos do Projeto
 
-O objetivo deste projeto é criar uma aplicação que exibe informações detalhadas sobre os planetas do sistema solar. O sistema terá as seguintes funcionalidades:
+Este é um projeto em que estou aprendendo React e adicionando novas funcionalidades à medida que meu conhecimento na biblioteca aumenta. A ideia do projeto é construir uma aplicação web para visualização de informações sobre planetas utilizando a API da NASA. A ideia é que o sistema terá as seguintes funcionalidades:
 
 - Exibir uma lista dos planetas com informações básicas;
 - Permitir que o usuário selecione um planeta da lista para exibir informações mais detalhadas sobre ele;
