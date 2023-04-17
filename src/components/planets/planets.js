@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react"
 import Planet from "./planet/planet"
 import '../../css/stylePlanets.css'
+import AddPlanetForm from "./planet/form/addPlanetForm"
 async function getPlanets() {
     let res = await fetch('http://localhost:3000/api/planets.json')
     let date = await res.json()
@@ -16,10 +17,15 @@ const Planets = () => {
             setPlanets(date['planets'])
         })
     }, [])
+    const addPlanet = (new_planet) => {
+        setPlanets([...planets, new_planet])
+    }
     return (
         <Fragment>
             <h1>Planet List</h1>
-            <hr></hr>
+            <hr/>
+            <AddPlanetForm addPlanet={addPlanet}/>
+            <hr/>
             {
                 planets.map((planet, index) =>
                     <Planet
