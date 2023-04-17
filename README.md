@@ -8,7 +8,6 @@ O objetivo deste projeto é criar uma aplicação que exibe informações detalh
 
 - Exibir uma lista dos planetas com informações básicas;
 - Permitir que o usuário selecione um planeta da lista para exibir informações mais detalhadas sobre ele;
-- Alternar entre diferentes unidades de medida (km/mi para distâncias e kg/lb para massas);
 - Permitir que o usuário faça buscas por nome ou características dos planetas.
 
 ## Tecnologias Utilizadas
