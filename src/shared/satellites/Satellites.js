@@ -1,5 +1,4 @@
 import React, {Fragment} from "react"
-
 const Satellites = (props) => {
     return(
         <Fragment>
@@ -7,5 +6,4 @@ const Satellites = (props) => {
         </Fragment>
     )
 }
-
 export default Satellites

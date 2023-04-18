@@ -12,6 +12,9 @@
     padding: 10px;
     border-radius: 5px;
 }
+#formSatellite input{
+    width: 100%;
+}
 .form .button{
     margin: 10px;
     border-radius: 5px;
