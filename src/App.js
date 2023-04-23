@@ -1,9 +1,10 @@
-import Planets from './components/planets/planets'
+
+import Rotas from './routes.js';
 
 function App() {
   return (
     <div>
-      <Planets/>
+      <Rotas/>
     </div>
   );
 }
