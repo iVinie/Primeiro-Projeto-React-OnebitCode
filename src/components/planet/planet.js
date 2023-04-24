@@ -5,7 +5,7 @@ import Title from "../../shared/title/title"
 import '../../css/stylePlanet.css'
 import Satellites from '../../shared/satellites/Satellites'
 import AddSatellitesForm from "../planet/form/addSatellitesForm"
-import { useParams } from "react-router-dom"
+import { useParams , useNavigate, } from "react-router-dom"
 
 async function getPlanet(id) {
     let res = await fetch(`http://localhost:3000/api/${id}.json`)
@@ -16,14 +16,20 @@ const Planet = () => {
     const [planet, setPlanet] = useState({})
     const [satellites, setSatellites] = useState([])
     let { id } = useParams( )
+    let navigate = useNavigate()
     useEffect(() => {
         getPlanet(id).then(data => {
             setSatellites(data['satellites'])
             setPlanet(data['data'])
+        }, error =>{
+
         })
     }, [])
     const addSatellite = (new_Satellite) => {
         setSatellites([...satellites, new_Satellite])
+    }
+    function goToHome(){
+        navigate('/')
     }
     return (
         <div className="test">
@@ -44,6 +50,7 @@ const Planet = () => {
                     )
                 }
             </ul>
+                <button onClick={() => goToHome()}>Voltar ao inicio</button>
         </div>
     )
 }
