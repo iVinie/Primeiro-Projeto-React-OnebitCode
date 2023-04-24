@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import '../../../../css/styleForm.css'
+import '../../../css/styleForm.css'
 const initialState = { name: [] }
 const AddSatellitesForm = (props) => {
     const [newSatellite, setNewSatellite] = useState(initialState)

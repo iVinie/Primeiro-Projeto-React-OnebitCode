@@ -1,15 +1,13 @@
 import React, { Fragment, useState, useEffect } from "react"
 import Planet from "./planet/planet"
 import '../../css/stylePlanets.css'
-import AddPlanetForm from "./planet/form/addPlanetForm"
+import AddPlanetForm from "../planet/form/addPlanetForm"
 async function getPlanets() {
     let res = await fetch('http://localhost:3000/api/planets.json')
     let date = await res.json()
     return date
 }
-const ClikPlanet = (name) => {
-    console.log(`Clicou no: ${name}`)
-}
+
 const Planets = () => {
     const [planets, setPlanets] = useState([])
     useEffect(() => {
@@ -33,7 +31,6 @@ const Planets = () => {
                         description={planet.description}
                         img_url={planet.img_url}
                         link={planet.link}
-                        ClikPlanet={ClikPlanet}
                         id={planet.id}
                         key={index}
                     />

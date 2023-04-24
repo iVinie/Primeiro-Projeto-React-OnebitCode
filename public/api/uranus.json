@@ -6,7 +6,7 @@
     {"name": "Titania"},
     {"name": "Oberon"}
   ],
-  "date": [
+  "data": 
     {
       "id": "uranus",
       "name": "Uranus",
@@ -14,5 +14,5 @@
       "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Uranus2.jpg/280px-Uranus2.jpg",
       "link": "https://en.wikipedia.org/wiki/Uranus"
     }
-  ]
+  
 }
